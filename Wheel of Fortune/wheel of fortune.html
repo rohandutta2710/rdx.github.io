@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Wheel of Fortune
+        </title>
+        <link rel="icon" href="./wheel_icon_img.jpg">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,600;1,500;1,600&display=swap" rel="stylesheet">     
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">   
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,600;1,500;1,600&display=swap" rel="stylesheet">     
+        <link rel="stylesheet" href="./wheel_of_fortune_css.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body id="body">
+            <!-- scoreboards -->
+        <div id="boards" class="scoreboard">
+            <div class="icon-cross" id="icon-cross"><i class="fas fa-times"></i></div>
+            <center>
+            <div class="filter" id="filter">
+                <!-- <input type="radio" name="filter" id="all" onclick="func_sort(0)" checked>All
+                <input type="radio" name="filter" id="sort" onclick="func_sort(1)">Sort -->
+            </div>
+            <div class="tables-size">
+            <table id="table">
+            </table>
+            </div>
+            </center>
+        </div>
+        <!-- Login page -->
+        <center>
+            <div class="containerlogin" id="containerlogin">
+            <div class="scoreboard-right"><span class="scoreboard-written" onclick="funcscoreboard()">Scoreboard</span></div>
+            <div class="box-data">
+                <p class="loginintogame">Log in page</p>
+                    <input type="text" name="fullname" id="fullname" placeholder="Enter your full name" maxlength="20"><br>
+                    <input type="tel" name="phoneno" id="phoneno" placeholder="Enter your phone number" maxlength="10" min="1000000000" max="9999999999" ><br>
+                    <p class="login" onclick="main_page_content()">Log in </p><br> 
+            </div>
+            </div>
+        </center>
+        <!-- main page -->
+        <div class="main_page" id="main_page">
+        <p class="wheel_fortune">Wheel of Fortune
+            <center>
+                <img src="./border_image.jpg" alt="Loading" style="vertical-align:text-top;" class="borderimg">
+            </center>
+        </p>
+        <div class="scoreboard-right"><span class="scoreboard-written" onclick="funcscoreboard()">Scoreboard</span></div>
+        <div class="container">
+            <!-- wheel  -->
+            <div class="left">
+                <div class="wheel_img" id="wheel_img"> <img src="./wheel 2-01.png" alt="Loading" class="wheel_image" id="spinner"/></div>
+                <div class="arrow_img" id="arrow"><img src="./arrow-04.png" alt="Loading" class="arrow_image"/></div>
+            </div>
+        <!-- button audio -->
+        <audio id="button_sound">
+            <source src="./new_pop_up1.mp3" type="audio/mpeg">
+        </audio>
+        </div>
+     </div>
+        <!-- complete win page -->
+        <div id="complete_win_page">
+            <div class="scoreboard-right"><span class="scoreboard-written" onclick="funcscoreboard()">Scoreboard</span></div>
+            <div class="complete_win_page" >
+                <p>Thank You!</p>
+                <p id="scoring"></p>
+                <audio id="complete_win_sound">
+                    <source  src="./win sound.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+        <script src="./wheel_of_fortune_js.js"></script> 
+    </body>
+</html>

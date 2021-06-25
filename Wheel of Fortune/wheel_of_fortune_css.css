@@ -1,0 +1,350 @@
+html{
+    height:100vh;
+}
+body{
+        margin: 0px;
+        background-image: url('./buttons_bg.png');
+        background-position: center;    
+        background-size:cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        overflow: scroll;
+}
+/* Login page starts*/
+.containerlogin{
+    font-family: 'Montserrat', 'sans-serif';
+    padding: 0px;
+    margin-top: 8%;
+    display: block;
+}
+.box-data{
+    margin-top: 60px;
+    padding:0px 15px 0px 15px;
+    width: 410px;
+    height: 375px;
+    border-radius:10px ;
+    background-color: white;
+    background-image: url('./buttons_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 4px solid #d19104;
+    /* box-shadow: 2px 2px 10px rgb(161, 161, 161); */
+}
+.box-data .loginintogame{
+    font-weight: bold;
+    font-size: 40px ;
+    color: white;
+    padding:38px 0px 25px 0px ;
+    margin:0px;          
+}
+.box-data>input{
+    border: 2px solid rgb(206, 204, 204);
+    padding-left: 10px;
+    width: 95%;
+    outline: none;
+    height: 56px;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.box-data .login{
+    margin-top: 0px;
+    cursor: pointer;
+    border:none;
+    background-color: #1877f2;
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+    border-radius: 8px;
+    padding: 10px;
+    width: 95%;
+    margin-bottom: 15px;
+}
+.login:hover{
+    background-color: #006cfa;
+}
+.box-data input:focus::placeholder{
+    color: rgb(192, 189, 189);
+}
+/* Login page ends */
+
+/* main page */
+.main_page{
+    display: none;
+}
+
+/* Name of the game */
+.wheel_fortune{
+        margin:10px 0px 0px 5px;
+        font-family: 'Calibri';
+        text-align: center;
+        color: white;
+        font-size: 60px;
+}
+.borderimg{
+       width: 60%;
+       height: 2px;
+}
+/* wheels */
+.container .left{
+        width: 100%;
+        margin-top:15px;
+        text-align: center;
+        height:590px
+}
+/* image */
+.wheel_img img{
+        border-radius:50% ;
+        width: 550px;
+        height:550px;
+        transform-origin: center;
+        transition: transform 6s cubic-bezier(0,0,0.001,1);
+}   
+.arrow_img img{
+        top: 253px;
+        left: 50%;
+        margin-left: -200px;
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        z-index: 1;
+}
+
+/* Complete win page */
+#complete_win_page{
+    display: none;
+    margin-top: 50px;
+}
+.complete_win_page{
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+    top: 20vh;
+    margin: auto;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    width: 550px;
+    padding: 50px;
+    border-radius: 35px;
+    border: 8px solid white;
+    background-image: url('./buttons_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.complete_win_page p{
+    text-transform: capitalize;
+    margin: 10px 0px 10px 0px;
+}
+/* complete win page ends */
+/* Scoreboard starts*/
+.scoreboard-written{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    border-radius: 10px;
+    border: 4px solid white;
+    padding: 10px;
+    
+}
+.scoreboard-right{
+    margin-top: 30px;
+    margin-right: 3%;
+    margin-bottom: 20px;
+    text-align: right;
+}
+.scoreboard-written:hover{
+    color:deepskyblue;
+    border-color:deepskyblue ;
+}
+.scoreboard{
+    display: none;
+}
+/* scoreboard input buttons*/
+.filter{
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+}
+.filter>input{
+    width: 18px;
+    height: 18px;
+    margin-bottom: 20px;
+    margin-left: 45px;
+    margin-right: 10px;
+}
+/* scoreboards table */
+
+/* Scoreboard table page */
+.icon-cross{
+    text-align: right;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+.icon-cross i{
+    margin-right: 6%;
+    color: white;
+    font-size: 40px;
+}
+.icon-cross i:hover{
+    color: red;
+}
+.tables-size{
+    width: 600px;
+    height: 500px;
+    border: 5px solid white;
+    overflow-y: scroll;
+    background-image: url('./buttons_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+.tables-size table:hover{
+    cursor: pointer;
+}
+.tables-size table{
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    color: white;
+    border-collapse: collapse;
+}
+.tables-size td,th{
+    font-weight: bold;
+    width:55%;
+    padding: 20px;
+    border: 2px solid white;
+}
+tr:hover td{
+    color:deepskyblue;
+}
+/* scoreboard ends */
+@media only screen and (max-width:650px){
+        .tables-size{
+            width: 500px;
+        }
+        .complete_win_page{
+            font-size: 40px;
+            width: 400px;
+            padding: 30px;
+        }
+}
+@media only screen and (max-width:600px){
+        .wheel_img img{
+            width: 420px;
+            height: 420px;
+        }
+        .arrow_img img{
+            margin-left: -135px;
+            width: 270px;
+            height: 270px;
+        }
+        .tables-size{
+            width: 420px;
+        }
+}
+@media only screen and (max-width:500px){
+        .complete_win_page{
+            font-size: 40px;
+            width: 410px;
+            padding: 30px;
+        }
+        .filter>input{
+            margin-left: 25px;
+        }
+}
+@media only screen and (max-width:430px){
+        .arrow_img img{
+            top: 247px;
+            margin-left: -130px;
+        }
+        .wheel_fortune{
+            font-size: 50px;
+        }
+        .box-data{
+            width: 300px;
+        }
+        .tables-size{
+            width: 320px;
+        }
+        .complete_win_page{
+            font-size: 40px;
+            width: 290px;
+            padding: 30px;
+        }
+        .box-data .loginintogame{
+            font-size:30px ;
+        }
+}
+@media only screen and (max-width:400px){
+        .wheel_fortune{
+            margin:25px 0px 0px 0px;
+            font-size: 40px;
+        }
+        .wheel_img img{
+            width: 300px;
+            height: 300px;
+        }
+        .arrow_img img{
+            top: 223px;
+            margin-left: -98px;
+            width: 200px;
+            height: 200px;
+        }
+          .complete_win_page{
+            font-size: 30px;
+            width: 250px;
+            padding: 30px;
+        }
+}
+@media only screen and (max-width:321px){
+    .box-data{
+        width: 280px;
+    }
+    .box-data>input{
+        height: 50px;
+        font-size: 18px;
+    }
+    .tables-size{
+        width: 200px;
+    }
+    .tables-size td,th{
+        padding: 10px;
+        font-size: 25px;
+    }
+    .complete_win_page{
+        font-size: 30px;
+        width: 210px;
+        padding: 30px;
+    }
+}
+
+@media only screen and (max-width:290px){
+    .wheel_fortune{
+        margin-left: 10%;
+        font-size: 35px;
+    }
+    .box-data{
+        width: 190px;
+    }
+    .box-data input{
+        height: 40px;
+        font-size: 13px;
+    }
+    .complete_win_page{
+        font-size: 25px;
+        padding: 10px;
+    }
+    .box-data .loginintogame{
+            font-size:20px ;
+    }
+    .arrow_img img{
+        top: 215px;
+        margin-left: -88px;
+        width: 200px;
+        height: 200px;
+    }
+}
