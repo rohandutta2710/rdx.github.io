@@ -1,0 +1,63 @@
+
+
+.container{
+    font-size: 70px;
+    padding-top: 25px;
+    text-align: center;
+    margin-bottom: 200px;
+}
+body{background-color:rgb(30, 142, 207);}
+input{
+    padding-left: 25px;
+    width: 850px;
+    height: 70px;
+    font-size: 30pt;
+    border-radius: 40px;
+    margin-bottom: 10px ;
+    margin-top: 15px ;
+}
+button{
+    background-color:whitesmoke;
+    text-align:  center;
+    border-radius: 15px;
+    font-size: 17mm;
+    width: 105px;
+    height: 105px;
+}
+
+table{
+    border: 15px solid mediumseagreen;
+    border-radius: 25pt;
+    /*margin-left: 423px;*/
+    background-color: mediumseagreen;
+    border-spacing: 5px
+}
+
+/*Button textColor Blue*/
+.button-color{color: rgb(2, 126, 241);}
+
+
+/*sin cosine tan side designing*/
+.trigo{
+    font-size: 7mm;
+    background-color: rgb(228, 222, 222);
+}
+
+/* red hover for button C*/
+.hover_C:hover
+{
+    /*color: white;*/
+    background-color: rgb(216, 25, 25);
+}
+
+/*background colors on clicking button */
+.hover_rest:hover
+{
+    background-color: rgb(64, 134, 180);
+}
+
+*:focus
+{
+    outline: none;
+    border: none;
+}
