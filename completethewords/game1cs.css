@@ -1,0 +1,497 @@
+html{
+    height: 100vh;
+}
+body{
+    margin-bottom: 50px;
+    background-image: url('./button1.jpg');
+    background-position: center;    
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Login page starts*/
+.containerlogin{
+    font-family: 'Montserrat', 'sans-serif';
+    padding: 0px;
+    /* width: 100%; */
+    margin-top: 8%;
+    display: block;
+}
+.box-data{
+    margin-top: 60px;
+    padding:0px 15px 0px 15px;
+    width: 420px;
+    height: 390px;
+    border-radius:10px ;
+    background-color: white;
+    background-image: url('./buttons_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 4px solid #d19104;
+    /* box-shadow: 2px 2px 10px rgb(161, 161, 161); */
+}
+.box-data .loginintogame{
+    /* font-family: 'Kaushan Script', cursive; */
+    font-weight: bold;
+    font-size: 40px ;
+    color: white;
+    padding:37px 0px 25px 0px ;
+    margin:0px;          
+}
+.box-data>input{
+    border: 2px solid rgb(206, 204, 204);
+    padding-left: 10px;
+    width: 90%;
+    outline: none;
+    height: 56px;
+    font-size: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.box-data .login{
+    margin-top: 0px;
+    cursor: pointer;
+    border:none;
+    background-color: #1877f2;
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+    border-radius: 8px;
+    padding: 10px;
+    width: 90%;
+    margin-bottom: 15px;
+}
+.login:hover{
+    background-color: #006cfa;
+}
+.box-data input:focus::placeholder{
+    color: rgb(192, 189, 189);
+}
+/* Login page ends */
+
+/* score and attempt */
+.score_attempt .score,.attempt{
+    font-size: 35px;
+    color: white;
+    margin-left:2%;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+.score_attempt .attempt{
+    float: right;
+    margin-right: 3%;
+}
+/* main page */
+.main_page{
+    display: none;
+}
+.complete{
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-family: 'Calibri';
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+.borderimg{
+    width:60%;
+    vertical-align: top;
+    margin-bottom: 40px;
+    height: 3px;
+}
+
+/* fill in the blanks */
+.fill_blank p{
+    width:fit-content;
+    display: none;
+    padding:4px 10px 8px 10px;
+    font-size: 40px;
+    color: white;
+    margin: 0px;
+    border: 3px solid white ;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+/* option buttons */
+.btns_option{
+    margin-bottom: 25px;
+    text-align: center;
+    width: 650px;
+    padding: 20px 5px 20px 5px;
+    border-radius: 35px;
+    border: 8px solid white;
+    background-image: url('./buttons_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.btns_option button{
+    border: 5px solid white;
+    vertical-align: middle;
+    font-weight: bolder;
+    font-family: 'Montserrat', 'sans-serif';
+    color: black;
+    background-color: rgb(167, 165, 165);
+    width: 65px;
+    height: 65px;
+    font-size: 30px;
+    border-radius:15px;
+    margin: 15px 40px 15px 40px;
+}
+.btns_option button:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+/* input selectors buttons which word will come*/
+.inputs{
+    margin: 10px;
+    margin-bottom: 40px !important;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    display: inline !important;
+}
+
+
+/* words */
+.question {
+    font-weight:bolder;
+    color: black;
+    display: none;
+    font-size:30px;
+    text-align: center;
+    height: 107px;
+}
+.question p{
+    background-image: url('./buttons_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: fit-content;
+    margin: 0px 0px 20px 0px;
+    border-radius: 15px;
+    border: 3px solid white;
+    padding: 25px;
+}
+
+.session > span{
+    margin: 0px 10px 0px 10px ;
+}
+.question .hidden{
+    opacity: 0;
+}
+.first > span{
+    padding: 12px;
+}
+.question .first{
+    border: 3px solid white !important;
+    padding: 12px;
+    text-align: center;
+    border-radius:15px;
+    background-color: rgb(192, 188, 188);
+}
+/* margin 0 for the tick icon */
+.icon_margin{
+    margin: 0px !important;
+}
+
+/* Complete win page */
+#complete_win_page{
+    display: none;
+    margin-top: 50px;
+}
+.complete_win_page{
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+    top: 20vh;
+    margin: auto;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    width: 550px;
+    padding: 50px;
+    border-radius: 35px;
+    border: 8px solid white;
+    background-image: url('./buttons_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.complete_win_page p{
+    text-transform: capitalize;
+    margin: 10px 0px 10px 0px;
+}
+
+/* scoreboard starts */
+.scoreboard-written{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    border-radius: 10px;
+    border: 4px solid white;
+    padding: 10px;
+    
+}
+.scoreboard-right{
+    margin-right: 3%;
+    margin-bottom: 20px;
+    text-align: right;
+}
+.scoreboard-written:hover{
+    color:deepskyblue;
+    border-color:deepskyblue ;
+}
+.scoreboard{
+    display: none;
+}
+/* scoreboard input buttons*/
+.filter{
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+}
+.filter>input{
+    width: 18px;
+    height: 18px;
+    margin-bottom: 20px;
+    margin-left: 45px;
+    margin-right: 10px;
+}
+
+/* Scoreboard table page */
+.icon-cross{
+    text-align: right;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+.icon-cross i{
+    margin-right: 6%;
+    color: white;
+    font-size: 40px;
+}
+.icon-cross i:hover{
+    color: red;
+}
+.tables-size{
+    width: 600px;
+    height: 500px;
+    border: 5px solid white;
+    overflow-y: scroll;
+    background-image: url('./buttons_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+.tables-size table:hover{
+    cursor: pointer;
+}
+.tables-size table{
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    color: white;
+    border-collapse: collapse;
+}
+.tables-size td,th{
+    font-weight: bold;
+    width:55%;
+    padding: 20px;
+    border: 2px solid white;
+}
+tr:hover td{
+    color:deepskyblue;
+}
+/* scoreboard ends */
+@media only screen and (max-width:650px) {
+    .question{
+        height: 90px;
+    }
+    .btns_option{
+        width: 500px;
+        padding: 20px 5px 20px 5px;
+    }
+    .question .first{
+        padding: 5px;
+    }
+    .question p{
+        padding: 20px 10px 20px 10px;
+    }
+    .complete_win_page{
+        font-size: 40px;
+        width: 400px;
+        padding: 30px;
+    }
+    .icon_margin{
+        display: none !important;
+    }
+    .tables-size{
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .btns_option{
+        width: 360px;
+        padding: 10px 3px 10px 3px;
+    }
+    .btns_option button{
+        margin: 5px 20px 5px 20px;
+    }
+    .question p{
+        padding: 15px 5px 15px 5px;
+    }
+    .session > span{
+        margin: 0px 5px 0px 5px ;
+    }
+    .first > span{
+        padding: 8px;
+    }
+    .complete_win_page{
+        font-size: 40px;
+        width: 300px;
+        padding: 30px;
+    }
+    .fill_blank p{
+        font-size: 30px;
+    }
+    .borderimg{
+        width:90%;
+    }
+    .tables-size{
+        width: 400px;
+    }
+    .box-data{
+        width: 350px;
+    }
+    .filter>input{
+        margin-left: 25px;
+    }
+    
+}
+
+@media only screen and (max-width:420px) {
+    .btns_option{
+        width: 290px;
+        padding: 10px 3px 10px 3px;
+    }
+    .btns_option button{
+        margin: 5px 10px 5px 10px;
+    }
+    .session > span{
+        margin: 0px 3px 0px 3px ;
+    }
+    .first > span{
+        padding: 5px;
+    }
+    .complete_win_page{
+        font-size: 30px;
+        width: 220px;
+        padding: 30px;
+    }
+    .complete{
+        font-size: 32px;
+    }
+    .fill_blank p{
+        font-size: 25px;
+    }
+    .icon_margin{
+        display: none !important;
+    }
+    .tables-size{
+        width: 320px;
+    }
+    .box-data{
+        width: 300px;
+    }
+}
+@media only screen and (max-width:400px) {
+.score_attempt .attempt{
+    /* float: none; */
+    font-size: 30px;
+    margin-right: 1%!important;
+}
+.score_attempt .score{
+    font-size: 30px;
+}
+}
+@media only screen and (max-width:321px) {
+    .btns_option{
+        width: 260px;
+        padding: 10px 3px 10px 3px;
+    }
+    .btns_option button{
+        margin: 5px;
+    }
+    .session > span{
+        margin: 0px 2px 0px 2px ;
+    }
+    .first > span{
+        padding: 2px;
+    }
+    .complete{
+        font-size: 30px;
+    }
+    .complete_win_page{
+        font-size: 30px;
+        width: 200px;
+        padding: 30px;
+    }
+    .fill_blank p{
+        font-size: 22px;
+    }
+    .tables-size{
+        width: 200px;
+    }
+    .tables-size td,th{
+        padding: 10px;
+        font-size: 25px;
+    }
+    .box-data{
+        width: 220px;
+    }
+    .box-data input{
+        height: 40px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:281px) {
+    .btns_option{
+        width: 240px;
+        padding: 10px 3px 10px 3px;
+    }
+    .btns_option button{
+        margin: 5px;
+    }
+    .complete{
+        font-size: 25px;
+    }
+    .complete_win_page{
+        font-size: 25px;
+        width: 150px;
+        padding: 30px;
+    }
+    .fill_blank p{
+        width: 250px;
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .fill_blank p{
+        font-size: 18px;
+    }
+    .box-data{
+        width: 190px;
+    }
+    .box-data input{
+        height: 40px;
+        font-size: 13px;
+    }
+}

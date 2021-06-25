@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Complete the word
+        </title>
+        <link rel="icon" href="./titlebar_logo.jpeg">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <!-- dancing script -->
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,600;1,500;1,600&display=swap" rel="stylesheet">     
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="./game1cs.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       <!-- scoreboards -->
+       <div id="boards" class="scoreboard">
+        <div class="icon-cross"><i class="fas fa-times" id="icon-cross"></i></div>
+        <center>
+        <div class="filter" id="filter">
+            <!-- <input type="radio" name="filter" id="all" onclick="func_sort(0)" checked>All
+            <input type="radio" name="filter" id="sort" onclick="func_sort(1)">Sort -->
+        </div>
+        <div class="tables-size">
+        <table id="table">
+            <!--<tr>-->
+            <!--    <th>Name</th>-->
+            <!--    <th>Score</th>-->
+            <!--</tr>-->
+            <!-- <tr>
+                <td>Rohan</td>
+                <td>300</td>
+            </tr> -->
+        </table>
+    </div>
+</center>
+    </div>
+         <!-- Login page -->
+         
+            <div class="containerlogin" id="containerlogin">
+                <div class="scoreboard-right"><span class="scoreboard-written" onclick="funcscoreboard()">Scoreboard</span></div>
+                <center>
+                <div class="box-data">
+                <p class="loginintogame">Log in page</p>
+                    <input type="text" name="fullname" id="fullname" placeholder="Enter your full name" maxlength="20"><br>
+                    <input type="tel" name="phoneno" id="phoneno" placeholder="Enter your phone number" maxlength="10" min="1000000000" max="9999999999" ><br>
+                    <p class="login" onclick="main_page_content()">Log in </p><br> 
+            </div>
+        </center>
+            </div>
+        
+        <!-- main page -->
+        <div class="main_page" id="main_page">
+            <p class="complete">Complete the Word</p>
+        <center>
+            <img src="./border_image.jpg" alt="Loading" class="borderimg">
+        </center>
+        <div class="scoreboard-right"><span class="scoreboard-written" onclick="funcscoreboard()">Scoreboard</span></div>
+        <!-- Scoreboard and attempts -->
+        <div class="score_attempt">
+            <p class="score" id="score"></p>
+            <p class="attempt" id="attempt"></p>
+        </div>
+        <!-- first text game -->
+        <div class="center_word">
+        <div class="question" id="text1">
+            <center><p class="session"><span class="first"><span>H</span></span><span class="first"><span class="hidden" id="hidden_1i">i</span></span><span class="first"><span>d</span></span><span class="first"><span class="hidden" id="hidden_1d">d</span></span><span class="first"><span class="hidden" id="hidden_1e">e</span></span><span class="first"><span>n</span></span><span class="icon_margin"><i class="fas fa-check" id="sign1"></i></span></p></center>
+        </div>
+        </div>
+        <!-- second text game -->
+        <div class="center_word">
+        <div class="question" id="text2">
+            <center><p class="session"><span class="first"><span>R</span></span><span class="first"><span class="hidden" id="hidden_2e">e</span></span><span class="first"><span>b</span></span><span class="first"><span class="hidden" id="hidden_2o">o</span></span><span class="first"><span>u</span></span><span class="first"><span>n</span></span><span class="first"><span class="hidden" id="hidden_2d">d</span></span><span class="icon_margin"><i class="fas fa-check" id="sign2"></i></span></p></center>
+        </div>
+        </div>
+        <!-- third text game -->
+        <div class="center_word">
+        <div class="question" id="text3">
+            <center><p class="session"><span class="first"><span>V</span></span><span class="first"><span class="hidden" id="hidden_3i">i</span></span><span class="first"><span>r</span></span><span class="first"><span class="hidden" id="hidden_3t">t</span></span><span class="first"><span>u</span></span><span class="first"><span class="hidden" id="hidden_3a">a</span></span><span class="first"><span>l</span></span><span class="icon_margin"><i class="fas fa-check" id="sign3"></i></span></p></center>
+        </div>
+        </div>
+        <!-- fourth text game -->
+        <div class="center_word">
+        <div class="question" id="text4">
+            <center><p class="session"><span class="first"><span>G</span></span><span class="first"><span class="hidden" id="hidden_4r">r</span></span><span class="first"><span class="hidden" id="hidden_4o">o</span></span><span class="first"><span>w</span></span><span class="first"><span class="hidden" id="hidden_4t">t</span></span><span class="first"><span>h</span></span><span class="icon_margin"><i class="fas fa-check" id="sign4"></i></span></p></center>
+        </div>
+        </div>
+        <!-- buttons for the attempts -->
+        <center>
+            <div class="fill_blank"><p id="fill"></p></div>
+            <div class="btns_option">
+                <button id="d">d</button><button id="g">g</button> <button id="b">b</button><button id="r">r</button>
+           <button id="a">a</button><button id="m">m</button><button id="c">c</button><button id="e">e</button>
+            <button id="n">n</button><button id="t">t</button><button id="p">p</button><button id="o">o</button>
+            <button id="q">q</button><button id="i">i</button><button id="u">u</button><button id="s">s</button>
+            
+        </div>
+        </center>
+        <center>
+        <div class="inputs">
+            <input type="radio" name="text_selector" id="1" value="1" class="inputs" onclick="option_selector(1)")/>
+            <input type="radio" name="text_selector" id="2" value="2" class="inputs" onclick="option_selector(2)")/>
+            <input type="radio" name="text_selector" id="3" value="3" class="inputs" onclick="option_selector(3)")/>
+            <input type="radio" name="text_selector" id="4" value="4" class="inputs" onclick="option_selector(4)")/>
+        </div>
+        </center>
+
+          
+        
+
+        <!-- button audio -->
+        <audio id="button_sound">
+            <source src="./new_pop_up1.mp3" type="audio/mpeg">
+        </audio>
+
+        <!-- winning sound -->
+        <audio id="win_sound">
+            <source src="./complete win sound.wav" type="audio/wav">
+        </audio>
+    </div>
+
+    <!-- complete win page -->
+    <div id="complete_win_page">
+        <div class="scoreboard-right"><span class="scoreboard-written" onclick="funcscoreboard()">Scoreboard</span></div>
+        <div class="complete_win_page" >
+            <p>Thank You!</p>
+            <p id="scoring"></p>
+            <audio id="complete_win_sound">
+                <source  src="./win sound.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+        <script src="./spi.js"></script> 
+    </body>
+      
+</html>
