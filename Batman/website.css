@@ -1,0 +1,290 @@
+*{
+    box-sizing: border-box;
+}
+
+/* Header designs starts */
+header {
+    font-size: 50px;
+    /* width: 100%; */
+    height: 225px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url("batman2.png");
+    background-position: center;
+}
+
+/* Header designs ends */
+
+
+/* Navigation Bar designs starts */
+nav {
+    position: sticky;
+    top: 0;
+}
+
+ul {
+    list-style-type: none;
+    overflow: auto;
+    background-color: #1877f2;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+ul a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+}
+
+ul a:hover {
+    background-color: purple;
+}
+
+/* Navigation Bar designs ends */
+
+/* Designing of left side column start*/
+.left {
+    margin-top: 20px;
+    padding-left: 5px;
+    width: 30%;
+    float: left;
+    color: white;
+    background-image: url("btaman1.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment: scroll;
+}
+
+p {
+    text-align: left;
+    font-size: 25px;
+}
+.left h1{
+    font-size: 40px;
+}
+.h11 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Designing of left side column  ends*/
+
+/* Designing of center column starts */
+.middle {
+    width: 50%;
+    float: left;
+}
+
+.middle img {
+    border: 2px solid black;
+    width: 650px;
+    height: 700px;
+}
+
+/* Designing of center column ends */
+
+/* Designing of right side column starts */
+.right {
+    margin: 15px 0px 5px 0px;
+    padding: 15px 0px 0px 15px;
+    float: left;
+    width: 20%;
+    background-color: lightgreen;
+}
+
+.right:hover {
+    border: 1px solid black;
+}
+
+.cards{
+        color: white;
+        font-size: 50px;
+        font-family:cursive;
+        background-color:#0dbbb2 ;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 50px ;
+}
+
+    .img_card{
+        /* margin-top: 20px; */
+        width: 23.5%;
+        height: 500px;
+        float:left; 
+        padding: 0px 25px 0px 25px;
+        /* transition: transform 3s;  */
+
+    }
+    .img_cards1{
+        margin-left: 50px;
+    }
+    .img_cards4{
+        margin-right: 50px;
+    }
+    .img_card:hover{
+        
+        transform:scale(1.15);
+                        /* box-shadow: 10px 10px 10px grey; */
+    }
+ .clearfix {
+    clear: both;
+}
+
+ 
+/* Designing of right side column ends*/
+
+/* Drop Down for movies */
+
+.content-dropdown-movie {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(245, 238, 238);
+    box-shadow: 0px 8px 16px 0px rgb(95, 5, 238);
+    width: 300px;
+    overflow: visible;
+}
+
+.content-dropdown-movie a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    display: block;
+    text-align: left;
+    height: auto;
+    width: 300px;
+    border: 2px solid black;
+}
+
+.content-movie:hover .content-dropdown-movie {
+    display: block;
+}
+
+.content-dropdown-movie a:hover {
+    background-color: darkturquoise;
+}
+
+
+/* Drop down for images*/
+
+.content-dropdown-images {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    width: 250px;
+    background-color: rgb(245, 238, 238);
+    box-shadow: 0px 8px 16px 0px rgb(95, 5, 238);
+}
+
+.content-dropdown-images a {
+    font-size: 25px;
+    width: 250px;
+    height: auto;
+    display: block;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+}
+
+.content-dropdown-images a:hover {
+    background-color: rgb(230, 36, 230);
+}
+
+.content-images:hover .content-dropdown-images {
+    display: block;
+}
+
+/* Drop down logo*/
+.content-dropdown-logo {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    width: 180px;
+    background-color: rgb(245, 238, 238);
+    box-shadow: 10px 10px 10px 10px grey;
+
+}
+
+.content-dropdown-logo a {
+    font-size: 25px;
+    width: 180px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border: 2px solid;
+    height: auto;
+}
+
+.content-dropdown-logo a:hover {
+    background-color: chartreuse;
+}
+
+.content-logo:hover .content-dropdown-logo {
+    display: block;
+}
+
+/*browser configuration*/
+@media only screen and (max-width:1500px) {
+    header{
+        height:150px;
+    }
+    .left {
+        width: 40%;
+    }
+
+    .middle {
+        width: 60%;
+    }
+    .left img{
+        width:40%;
+    }
+    .middle img{
+        width: 80%;
+    }
+    .right {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .right,
+    .middle,
+    .left {
+        width: 100%;
+    }
+    header{
+        height: 50px;
+    }
+    .left,.middle img {
+        width: 100%;
+        
+    }
+    nav{
+        top: auto;
+    }
+    li{
+        float: none;
+    }
+    .img_card{
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 80%;
+        padding: 0px;
+        height: 300px;
+    }
+    img_card:hover{
+        transform: scale(1.1);
+    }
+    .img_cards1,.img_cards4{
+        margin: 0px;
+    }
+}
