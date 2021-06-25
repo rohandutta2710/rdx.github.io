@@ -14,7 +14,6 @@ for(item of buttons)
         //operators
         if(buttonText=='x')                  //else
         {
-            window.alert("hello");
             screenvalue += buttonText;
             screeneval += '*';
             screen.value=screenvalue;
