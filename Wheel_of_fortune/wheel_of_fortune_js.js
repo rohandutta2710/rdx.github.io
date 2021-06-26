@@ -48,13 +48,14 @@ function main_page_content(){
         }
 }
 //click arrow spinning
-arrow.addEventListener("click",()=>{
+arrow.addEventListener("dblclick",Spin_wheel);
+function Spin_wheel(){
+        arrow.removeEventListener("dblclick",Spin_wheel);
         playbutton(button_sound);
-        a=(Math.floor(Math.random()*30)+1)*1734;
+        a=(Math.floor(Math.random()*30)+1)*1539;
         spinner.style.transform="rotateZ("+a+"deg)";
         setTimeout(func,7000);
-        //remove the addevent listener in func function 
-});
+}
 
 // button sound or musics
 function playbutton(x){
