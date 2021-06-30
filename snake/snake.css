@@ -1,0 +1,183 @@
+body{
+    background-image: url('./images/bg.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* //title of the game */
+.snake-title{
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+}
+.snake-title img{
+        width: 600px;
+        height: 100px;
+}
+
+/*Score and highscore  */
+.snake-score{
+    width: 100%;
+    text-align: center;
+}
+.snake-score > h1{
+    margin-bottom: 2px;
+}
+.snake-score span{
+    margin-right:50px;
+    font-family: 'Yellowtail', cursive;
+}
+
+/* main game */
+.snake-game{
+    background-image: linear-gradient(to bottom,rgb(75, 233, 75),rgb(228, 228, 97));/*rgb(230, 230, 64)*/
+    position: relative;
+    margin: auto;
+    width: 600px;
+    height: 600px;
+    border: 3px solid red;
+    display: grid;
+    grid-template-columns: repeat(30,1fr);
+    grid-template-rows: repeat(30,1fr);
+}
+.head{
+    background-color: blue;
+}
+.tail{
+    background-color: purple;
+}
+.head,.tail{
+    border-radius: 5px;
+    border:1px solid white;
+}
+.food{
+    background-color: red;
+    border-radius: 100%;
+}
+
+/* phones buttons */
+.btns{
+    display: none;
+    margin-top: 40px;
+    text-align: center;
+}
+.btns p{
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+.btns button{
+        font-size: 30px;
+        padding: 15px;
+        margin: 7px;
+        outline: none;
+        border-radius: 12px;
+        border: 1px solid black;
+        box-shadow: 5px 5px 15px;
+}
+button > i{
+    color: green;
+}
+button:hover{
+    background-color: green;
+}
+button:hover i{
+    color:white;
+}
+
+/* highscore breaker */
+.highscore-breaker{
+    background-image: linear-gradient(to bottom,rgb(75, 233, 75),rgb(228, 228, 97));/*rgb(230, 230, 64)*/
+    position: relative;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    margin-top: 180px;
+    text-align: center;
+    border: 3px solid red;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,1fr);
+    display: none;
+    box-shadow: 50px 50px 30px rgb(129, 161, 0);
+}
+.highscore-breaker > h1{
+    position: absolute;
+    z-index: 1;
+    margin:85px 0px 0px 0px;
+    color: black;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+}
+
+@media only screen and (max-height:800px) {
+    .snake-game{
+        width: 550px;
+        height: 550px;
+    }
+}
+@media only screen and (max-width:1000px) {
+    .btns{
+        display: block;
+    }
+}
+@media only screen and (max-width:800px),only screen and (max-height:700px) {
+    .snake-game{
+        width: 450px;
+        height: 450px;
+    }
+    .snake-title img{
+        width: 500px;
+    }
+}
+@media only screen and (max-width:500px),only screen and (max-height:600px) {
+    .snake-game{
+        width: 380px;
+        height: 380px;
+    }
+    .btns{
+        margin-top: 15px;
+    }
+    .snake-title img{
+        width: 390px;
+    }
+    .highscore-breaker{
+        margin-top: 142x;
+    }
+}
+@media only screen and (max-width:400px) {
+    .snake-game{
+        width: 330px;
+        height: 330px;
+    }
+    .btns button{
+        font-size: 25px;
+}
+    h1{
+        font-size: 25px;
+    }
+    .snake-title img{
+        width: 335px;
+    }
+    .highscore-breaker{
+        margin-top: 135px;
+    }
+}
+@media only screen and (max-width:321px) {
+    .snake-game{
+        width: 260px;
+        height: 260px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .snake-title img{
+        width: 260px;
+        height: 80px;
+    }
+    .highscore-breaker{
+        width: 250px;
+        height: 250px;
+    }
+    .highscore-breaker > h1{    
+        margin:70px 0px 0px 0px;
+    }
+}
