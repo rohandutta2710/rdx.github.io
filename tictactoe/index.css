@@ -1,0 +1,73 @@
+body{
+    background-color: black;
+}
+.title{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Kalam', cursive;
+    text-decoration: underline;
+
+}
+.title > h1{
+    margin-top: 0px;
+    margin-bottom:10px ;
+}
+.players{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    right:50px;
+}
+.players p{
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+.box{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    margin: auto;
+    border: 5px solid white;
+    display: grid;
+    grid-template-columns: repeat(3,10fr);
+    grid-template-rows: repeat(3,10fr);
+}
+.box-design{
+    border: 5px solid white;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+    outline: none;
+}
+.box-design:hover{
+    cursor: pointer;
+}
+.row{
+    text-align: center;
+    width: 100%;
+}
+
+/* @media only screen and (max-width:800px),only screen and (max-height:700px) {
+    .box{
+        width: 440px;
+        height: 440px;
+    }
+}
+@media only screen and (max-height:600px) {
+    .box{
+        width: 400px;
+        height: 400px;
+    }
+}
+@media only screen and (max-width:500px) {
+    .box{
+        width: 550px;
+        height: 550px;
+    }
+} */
