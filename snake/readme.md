@@ -1,1 +1,1 @@
-Link:- https://memerboy.000webhostapp.com/snake
+Link of game:- https://memerboy.000webhostapp.com/snake
